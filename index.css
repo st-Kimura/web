@@ -5,7 +5,7 @@ body {
 }
 /* 基本装飾 */
 header {
-  background: #789;
+  background: #333;
   padding: .5rem;
   text-align: right;
 }
@@ -31,7 +31,7 @@ li {
 
 /* メニュー */
 nav {
-  background: #ffd700;
+  background: #0bd;
   position: absolute;
   z-index: 1;
   top: 3.125rem;
