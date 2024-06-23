@@ -21,28 +21,33 @@
 </script>
   
 </head>
+  <header>
+  <button class="btn-menu">メニュー</button>
+  <nav>
+    <ul>
+      <li><a href="https://st-Kimura.github.io/web/rep01.html">1週目のレポート</a></li>
+      <li><a href="https://st-Kimura.github.io/web/rep02.html">2週目のレポート</a></li>
+      <li><a href="https://st-Kimura.github.io/web/rep03.html">3週目のレポート</a></li>
+    </ul>
+  </nav>
+</header>
+     <script>
+       const btn = document.querySelector('.btn-menu');
+const nav = document.querySelector('nav');
+
+btn.addEventListener('click', () => {
+  nav.classList.toggle('open-menu')
+  btn.innerHTML = btn.innerHTML === 'メニュー'
+    ? '閉じる'
+    : 'メニュー'
+});
+     </script>
 
   
   <div class=header>
     <h1>わたしのホームページ</h1>
     <div>きむちのホームページ。</div>
   </div>
-  <nav id="mainNav">
-  <div class="mainNav-Bg"></div><!--/#adminNavBg-->
-  <div class="mainNavBox">
-    <ul class="contents">
-      <li class="item">
-        <input id="acc-subOpen-home" class="acc-subOpen" type="checkbox">
-        <label class="acc-unshown" for="acc-subOpen-home">Home</label>
-        <ul class="subNav">
-          <li><a href="./top.html">トップページ</a></li>
-          <li><a href="#">お知らせ一覧</a></li>
-          <li><a href="#">リリースノート一覧</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div><!--/#mainNavBox-->
-</nav><!--/#mainNav-->
   <div class=main>
     
     <div>
