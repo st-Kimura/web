@@ -31,8 +31,8 @@ li {
 
 /* メニュー */
 nav {
-  background: #fc6;
-  background-color:#fc6
+  background: #000;
+  background-color:#000
   position: absolute;
   z-index: 1;
   top: 3.125rem;
