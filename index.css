@@ -17,42 +17,6 @@ body {
 
   position: relative;
 }
-
-.page_main {
-position: relative;
-}
-.page_main > aside {
-background-color: rgba(76,84,130,0.8);
-width: 350px;
-height: 100%;
-top: 0;
-left: -350px;
-position: fixed;
-}
-.page_main > aside ul {
-margin: 0;
-padding: 0;
-top: 50px;
-left: 114px;
-position: absolute;
-}
-.page_main > aside li {
-margin: 20px auto;
-list-style: none;
-}
-.page_main > aside button {
-background-color: rgba(76,84,130,0.8);
-display: block;
-position: absolute;
-top: 150px;
-left: 350px;
-width: 52px;
-height: 132px;
-margin: 0;
-padding: 0;
-border-radius: 0 5px 5px 0;
-}
-
 h1 {
   font-size: 150%;
   margin: 0 0;
@@ -63,3 +27,43 @@ div {
   margin: 0vw 0vh;
 }
 
+header#adminBar {
+  background-color: #fff;
+  border-bottom: 1px solid #32373c;
+  height: 40px;
+  width: 100%;
+  padding: 0 10px;
+    top: 0;
+    left: 0;
+  position: fixed;
+  z-index: 99;
+}
+#mainNav {
+  margin-top: 40px;
+}
+#mainNav .mainNav-Bg {
+  background-color: #23282d;
+    top: 0;
+    bottom: -120px;
+  position: fixed;
+  width: 200px;
+  z-index: 1;
+}
+#mainNav .mainNavBox {
+  background-color: #23282d;
+  padding-top: 40px;
+  overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  position: fixed;
+    max-width: 200px;
+  width: 100%;
+  z-index: 2;
+}
+main {
+  height: 100%;
+  margin-left: 200px;
+  padding-top: 40px;
+}
