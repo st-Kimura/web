@@ -41,7 +41,7 @@ a {
 li {
   margin: 2rem 0;
 }
- 
+
 /* ボタン */
 .btn-menu {
   border: 1px solid #999;
@@ -52,7 +52,7 @@ li {
   cursor: pointer;
   line-height: 1;
 }
- 
+
 /* メニュー */
 nav {
   background: #0bd;
@@ -62,5 +62,10 @@ nav {
   right: 0;
   overflow-x: hidden;
   text-align: center;
+  width: 0;
+  transition: .5s;
+}
+/* メニューを開いた時 */
+nav.open-menu {
   width: 100%;
 }
