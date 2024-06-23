@@ -18,26 +18,6 @@
   <meta name="format-detection" content="telephone=no">
 
   <link rel="stylesheet" href="index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script>
-$(function(){
-    var duration = 300;
-    var aside = $('.page_main > aside');
-    var asidButton = aside.find('button')
-        .on('click', function(){
-            aside.toggleClass('open');
-            if(aside.hasClass('open')){
-                aside.stop(true).animate({left: '-70px'}, duration, 'easeOutBack');
-                asidButton.find('img').attr('src', 'images/btn_close.png');
-            }else{
-                aside.stop(true).animate({left: '-350px'}, duration, 'easeInBack');
-                asidButton.find('img').attr('src', 'images/btn_open.png');
-            };
-        });
-
-});
 </script>
   
 </head>
@@ -47,16 +27,23 @@ $(function(){
     <h1>わたしのホームページ</h1>
     <div>きむちのホームページ。</div>
   </div>
-  <div class=main>
-    
-   <aside>
-        <ul>
-            <li><a href="#">sample_menu.1</a></li>
-            <li><a href="#">sample_menu.2</a></li>
-            <li><a href="#">sample_menu.3</a></li>
+  <nav id="mainNav">
+  <div class="mainNav-Bg"></div><!--/#adminNavBg-->
+  <div class="mainNavBox">
+    <ul class="contents">
+      <li class="item">
+        <input id="acc-subOpen-home" class="acc-subOpen" type="checkbox">
+        <label class="acc-unshown" for="acc-subOpen-home">Home</label>
+        <ul class="subNav">
+          <li><a href="./top.html">トップページ</a></li>
+          <li><a href="#">お知らせ一覧</a></li>
+          <li><a href="#">リリースノート一覧</a></li>
         </ul>
-        <button><img src="images/btn_open.png"></button>
-    </aside>
+      </li>
+    </ul>
+  </div><!--/#mainNavBox-->
+</nav><!--/#mainNav-->
+  <div class=main>
     
     <div>
       <h2>クラブ</h2>
