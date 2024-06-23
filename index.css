@@ -14,6 +14,40 @@ body {
 .main {
   background-color: #fff8d8;
   padding: 1em;
+
+  position: relative;
+}
+.page_main > aside {
+background-color: rgba(76,84,130,0.8);
+width: 350px;——②
+height: 100%;——③
+top: 0;
+left: -350px;——①
+position: fixed;
+}
+.page_main > aside ul {
+margin: 0;
+padding: 0;
+top: 50px;
+left: 114px;
+position: absolute;
+}
+.page_main > aside li {
+margin: 20px auto;
+list-style: none;
+}
+.page_main > aside button {
+background-color: rgba(76,84,130,0.8);
+display: block;
+position: absolute;
+top: 150px;
+left: 350px;
+width: 52px;
+height: 132px;
+margin: 0;
+padding: 0;
+border-radius: 0 5px 5px 0;
+  
 }
 h1 {
   font-size: 150%;
@@ -24,3 +58,4 @@ div {
   padding: 0vw 0vh;
   margin: 0vw 0vh;
 }
+
