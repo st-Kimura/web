@@ -3,30 +3,6 @@ body {
   margin: 0;
   padding: 0;
 }
-.header {
-  background-color: white;
-  padding: 0 .5em;
-}
-.footer {
-  background-color: white;
-  padding: 0 .5em;
-}
-.main {
-  background-color: #fff8d8;
-  padding: 1em;
-
-  position: relative;
-}
-h1 {
-  font-size: 150%;
-  margin: 0 0;
-  padding: .5em 0;
-}
-div {
-  padding: 0vw 0vh;
-  margin: 0vw 0vh;
-}
-
 /* 基本装飾 */
 header {
   background: #333;
@@ -69,3 +45,28 @@ nav {
 nav.open-menu {
   width: 100%;
 }
+
+.header {
+  background-color: white;
+  padding: 0 .5em;
+}
+.footer {
+  background-color: white;
+  padding: 0 .5em;
+}
+.main {
+  background-color: #fff8d8;
+  padding: 1em;
+
+  position: relative;
+}
+h1 {
+  font-size: 150%;
+  margin: 0 0;
+  padding: .5em 0;
+}
+div {
+  padding: 0vw 0vh;
+  margin: 0vw 0vh;
+}
+
