@@ -3,49 +3,6 @@ body {
   margin: 0;
   padding: 0;
 }
-/* 基本装飾 */
-header {
-  background: #333;
-  padding: .5rem;
-  text-align: right;
-}
-a {
-  color: #fff;
-  text-decoration: none;
-  white-space: nowrap;
-}
-li {
-  margin: 2rem 0;
-}
-
-/* ボタン */
-.btn-menu {
-  border: 1px solid #999;
-  background: transparent;
-  color: #fff;
-  padding: .5rem 1rem;
-  font-size: 1rem;
-  cursor: pointer;
-  line-height: 1;
-}
-
-/* メニュー */
-nav {
-  background: #0bd;
-  position: absolute;
-  z-index: 1;
-  top: 3.125rem;
-  right: 0;
-  overflow-x: hidden;
-  text-align: center;
-  width: 0;
-  transition: .5s;
-}
-/* メニューを開いた時 */
-nav.open-menu {
-  width: 100%;
-}
-
 .header {
   background-color: white;
   padding: 0 .5em;
@@ -60,6 +17,42 @@ nav.open-menu {
 
   position: relative;
 }
+
+.page_main {
+position: relative;
+}
+.page_main > aside {
+background-color: rgba(76,84,130,0.8);
+width: 350px;——②
+height: 100%;——③
+top: 0;
+left: -350px;——①
+position: fixed;
+}
+.page_main > aside ul {
+margin: 0;
+padding: 0;
+top: 50px;
+left: 114px;
+position: absolute;
+}
+.page_main > aside li {
+margin: 20px auto;
+list-style: none;
+}
+.page_main > aside button {
+background-color: rgba(76,84,130,0.8);
+display: block;
+position: absolute;
+top: 150px;
+left: 350px;
+width: 52px;
+height: 132px;
+margin: 0;
+padding: 0;
+border-radius: 0 5px 5px 0;
+}
+
 h1 {
   font-size: 150%;
   margin: 0 0;
