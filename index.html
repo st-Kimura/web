@@ -18,35 +18,46 @@
   <meta name="format-detection" content="telephone=no">
 
   <link rel="stylesheet" href="index.css">
-</head>
-<body>
-  <header>
-  <button class="btn-menu">メニュー</button>
-  <nav>
-    <ul>
-      <li><a href="https://st-Kimura.github.io/web/rep01.html">1週目のレポート</a></li>
-      <li><a href="https://st-Kimura.github.io/web/rep02.html">2週目のレポート</a></li>
-      <li><a href="https://st-Kimura.github.io/web/rep03.html">3週目のレポート</a></li>
-    </ul>
-  </nav>
-</header>
-     <script>
-       const btn = document.querySelector('.btn-menu');
-const nav = document.querySelector('nav');
 
-btn.addEventListener('click', () => {
-  nav.classList.toggle('open-menu')
-  btn.innerHTML = btn.innerHTML === 'メニュー'
-    ? '閉じる'
-    : 'メニュー'
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script>
+$(function(){
+    var duration = 300;
+    var aside = $('.page_main > aside');
+    var asidButton = aside.find('button')
+        .on('click', function(){
+            aside.toggleClass('open');
+            if(aside.hasClass('open')){
+                aside.stop(true).animate({left: '-70px'}, duration, 'easeOutBack');
+                asidButton.find('img').attr('src', 'images/btn_close.png');
+            }else{
+                aside.stop(true).animate({left: '-350px'}, duration, 'easeInBack');
+                asidButton.find('img').attr('src', 'images/btn_open.png');
+            };
+        });
+
 });
-     </script>
+</script>
+  
+</head>
+
   
   <div class=header>
     <h1>わたしのホームページ</h1>
     <div>きむちのホームページ。</div>
   </div>
   <div class=main>
+    
+   <aside>
+        <ul>
+            <li><a href="#">sample_menu.1</a></li>
+            <li><a href="#">sample_menu.2</a></li>
+            <li><a href="#">sample_menu.3</a></li>
+        </ul>
+        <button><img src="images/btn_open.png"></button>
+    </aside>
+    
     <div>
       <h2>クラブ</h2>
       <div>
