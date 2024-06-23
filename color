@@ -31,7 +31,7 @@ li {
 
 /* メニュー */
 nav {
-  background: #fee;
+  background: #fc6;
   position: absolute;
   z-index: 1;
   top: 3.125rem;
