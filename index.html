@@ -20,6 +20,29 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
+  <header>
+  <button class="btn-menu">メニュー</button>
+  <nav>
+    <ul>
+      <li><a href="#">ホーム</a></li>
+      <li><a href="#">サービス概要</a></li>
+      <li><a href="#">実績紹介</a></li>
+      <li><a href="#">お問い合わせ</a></li>
+    </ul>
+  </nav>
+</header>
+     <script>
+       const btn = document.querySelector('.btn-menu');
+const nav = document.querySelector('nav');
+
+btn.addEventListener('click', () => {
+  nav.classList.toggle('open-menu')
+  btn.innerHTML = btn.innerHTML === 'メニュー'
+    ? '閉じる'
+    : 'メニュー'
+});
+     </script>
+  
   <div class=header>
     <h1>わたしのホームページ</h1>
     <div>きむちのホームページ。</div>
@@ -52,34 +75,7 @@
     2024/05/22
   </div>
 
-<header>
-  <button class="btn-menu">メニュー</button>
-  <nav>
-    <ul>
-      <li><a href="#">ホーム</a></li>
-      <li><a href="#">サービス概要</a></li>
-      <li><a href="#">実績紹介</a></li>
-      <li><a href="#">お問い合わせ</a></li>
-    </ul>
-  </nav>
-</header>
-     <script>
-       const btn = document.querySelector('.btn-menu');
-const nav = document.querySelector('nav');
 
-btn.addEventListener('click', () => {
-  nav.classList.toggle('open-menu')
-  // if (btn.innerHTML === 'メニュー') {
-  //   btn.innerHTML = '閉じる';
-  // } else {
-  //   btn.innerHTML = 'メニュー';
-  // }
-  // ↑ これと同じ意味の三項演算子での書き方 ↓
-  btn.innerHTML = btn.innerHTML === 'メニュー'
-    ? '閉じる'
-    : 'メニュー'
-});
-     </script>
      
 </body>
 </html>
