@@ -23,10 +23,10 @@ position: relative;
 }
 .page_main > aside {
 background-color: rgba(76,84,130,0.8);
-width: 350px;——②
-height: 100%;——③
+width: 350px;
+height: 100%;
 top: 0;
-left: -350px;——①
+left: -350px;
 position: fixed;
 }
 .page_main > aside ul {
